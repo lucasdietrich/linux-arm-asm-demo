@@ -4,3 +4,5 @@
 - https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md#arm-32_bit_EABI
 
 Run with `make run`
+
+Debug with `make debug` then `Ctrl + F5`
