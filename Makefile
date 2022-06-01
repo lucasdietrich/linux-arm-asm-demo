@@ -13,7 +13,6 @@ show:
 
 run: exe.elf
 	qemu-arm exe.elf
-	echo $?
 
 clean:
 	rm -rf *.o exe.elf
