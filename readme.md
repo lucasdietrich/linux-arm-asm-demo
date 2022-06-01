@@ -6,3 +6,5 @@
 Run with `make run`
 
 Debug with `make debug` then `Ctrl + F5`
+
+![](./linux-arm-debug.png)
