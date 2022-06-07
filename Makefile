@@ -17,5 +17,8 @@ run: exe.elf
 debug: exe.elf
 	qemu-arm -singlestep -g 1234 exe.elf
 
+dis:
+	arm-linux-gnueabihf-objdump -d exe.elf
+
 clean:
 	rm -rf *.o exe.elf
