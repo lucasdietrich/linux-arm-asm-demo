@@ -1,0 +1,35 @@
+
+exe.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00010074 <_start>:
+   10074:	e59f0034 	ldr	r0, [pc, #52]	; 100b0 <exit+0x14>
+   10078:	e2800001 	add	r0, r0, #1
+   1007c:	e12fff30 	blx	r0
+
+00010080 <hello_world>:
+   10080:	f44f 7094 	mov.w	r0, #296	; 0x128
+   10084:	b580      	push	{r7, lr}
+   10086:	46eb      	mov	fp, sp
+   10088:	2704      	movs	r7, #4
+   1008a:	2001      	movs	r0, #1
+   1008c:	4909      	ldr	r1, [pc, #36]	; (100b4 <exit+0x18>)
+   1008e:	220e      	movs	r2, #14
+   10090:	df00      	svc	0
+   10092:	46dd      	mov	sp, fp
+   10094:	bd80      	pop	{r7, pc}
+   10096:	4808      	ldr	r0, [pc, #32]	; (100b8 <exit+0x1c>)
+   10098:	4780      	blx	r0
+	...
+
+0001009c <exit>:
+   1009c:	e92d4880 	push	{r7, fp, lr}
+   100a0:	e3a07001 	mov	r7, #1
+   100a4:	e3a00000 	mov	r0, #0
+   100a8:	ef000000 	svc	0x00000000
+   100ac:	e8bd8880 	pop	{r7, fp, pc}
+   100b0:	00010080 	.word	0x00010080
+   100b4:	000200bc 	.word	0x000200bc
+   100b8:	0001009c 	.word	0x0001009c

@@ -1,0 +1,71 @@
+
+test.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <test1>:
+   0:	b148      	cbz	r0, 16 <test1+0x16>
+   2:	b121      	cbz	r1, e <test1+0xe>
+   4:	b15a      	cbz	r2, 1e <test1+0x1e>
+   6:	4808      	ldr	r0, [pc, #32]	; (28 <test1+0x28>)
+   8:	4478      	add	r0, pc
+   a:	f7ff bffe 	b.w	0 <puts>
+   e:	4807      	ldr	r0, [pc, #28]	; (2c <test1+0x2c>)
+  10:	4478      	add	r0, pc
+  12:	f7ff bffe 	b.w	0 <puts>
+  16:	4806      	ldr	r0, [pc, #24]	; (30 <test1+0x30>)
+  18:	4478      	add	r0, pc
+  1a:	f7ff bffe 	b.w	0 <puts>
+  1e:	4805      	ldr	r0, [pc, #20]	; (34 <test1+0x34>)
+  20:	4478      	add	r0, pc
+  22:	f7ff bffe 	b.w	0 <puts>
+  26:	bf00      	nop
+  28:	0000001c 	.word	0x0000001c
+  2c:	00000018 	.word	0x00000018
+  30:	00000014 	.word	0x00000014
+  34:	00000010 	.word	0x00000010
+
+00000038 <test3>:
+  38:	b148      	cbz	r0, 4e <test3+0x16>
+  3a:	b121      	cbz	r1, 46 <test3+0xe>
+  3c:	b15a      	cbz	r2, 56 <test3+0x1e>
+  3e:	4808      	ldr	r0, [pc, #32]	; (60 <test3+0x28>)
+  40:	4478      	add	r0, pc
+  42:	f7ff bffe 	b.w	0 <puts>
+  46:	4807      	ldr	r0, [pc, #28]	; (64 <test3+0x2c>)
+  48:	4478      	add	r0, pc
+  4a:	f7ff bffe 	b.w	0 <puts>
+  4e:	4806      	ldr	r0, [pc, #24]	; (68 <test3+0x30>)
+  50:	4478      	add	r0, pc
+  52:	f7ff bffe 	b.w	0 <puts>
+  56:	4805      	ldr	r0, [pc, #20]	; (6c <test3+0x34>)
+  58:	4478      	add	r0, pc
+  5a:	f7ff bffe 	b.w	0 <puts>
+  5e:	bf00      	nop
+  60:	0000001c 	.word	0x0000001c
+  64:	00000018 	.word	0x00000018
+  68:	00000014 	.word	0x00000014
+  6c:	00000010 	.word	0x00000010
+
+00000070 <test4>:
+  70:	b148      	cbz	r0, 86 <test4+0x16>
+  72:	b121      	cbz	r1, 7e <test4+0xe>
+  74:	b95a      	cbnz	r2, 8e <test4+0x1e>
+  76:	4808      	ldr	r0, [pc, #32]	; (98 <test4+0x28>)
+  78:	4478      	add	r0, pc
+  7a:	f7ff bffe 	b.w	0 <puts>
+  7e:	4807      	ldr	r0, [pc, #28]	; (9c <test4+0x2c>)
+  80:	4478      	add	r0, pc
+  82:	f7ff bffe 	b.w	0 <puts>
+  86:	4806      	ldr	r0, [pc, #24]	; (a0 <test4+0x30>)
+  88:	4478      	add	r0, pc
+  8a:	f7ff bffe 	b.w	0 <puts>
+  8e:	4805      	ldr	r0, [pc, #20]	; (a4 <test4+0x34>)
+  90:	4478      	add	r0, pc
+  92:	f7ff bffe 	b.w	0 <puts>
+  96:	bf00      	nop
+  98:	0000001c 	.word	0x0000001c
+  9c:	00000018 	.word	0x00000018
+  a0:	00000014 	.word	0x00000014
+  a4:	00000010 	.word	0x00000010
